@@ -54,7 +54,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MemeTableViewCell" selectionStyle="default" indentationWidth="10" id="ob3-6s-EYK" userLabel="MemeTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemeTableViewCell" id="ob3-6s-EYK" userLabel="MemeTableViewCell" customClass="MemeTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ob3-6s-EYK" id="BzQ-eQ-CVw">
@@ -171,6 +171,9 @@
                     <navigationItem key="navigationItem" id="J16-hM-6aj">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5E6-q9-UVL"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="flowLayout" destination="fel-Im-TfQ" id="1CP-1s-7DY"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxt-46-3DS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

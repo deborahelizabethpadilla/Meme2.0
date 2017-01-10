@@ -10,6 +10,8 @@ import UIKit
 
 class CollectionVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    
     var memes: [Meme]!
 
     override func viewWillAppear(_ animated: Bool) {
