@@ -143,6 +143,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         let memedImage = generateMemedImage()
         _ = Meme(top: topTextField.text!, bottom: bottomTextField.text!, image: imageView.image, memedImage:memedImage)
         //TODO: Add to memes array in AppDelegate
+        let object = UIApplication.shared.delegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.memes.append(meme)
         
     }
     
