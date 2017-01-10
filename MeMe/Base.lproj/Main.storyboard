@@ -68,11 +68,50 @@
                             <outlet property="delegate" destination="YC6-oJ-c2h" id="ohF-Ge-8Ou"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="R1a-MX-kPi"/>
+                    <navigationItem key="navigationItem" id="L5n-5i-4VM" userLabel="Navigation Item">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ie5-Kx-JVR"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hI7-m1-41c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-154" y="874"/>
+        </scene>
+        <!--Detail MemeVC-->
+        <scene sceneID="eg1-ZC-tcE">
+            <objects>
+                <viewController id="FXt-As-tCQ" customClass="DetailMemeVC" customModule="MeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2o8-8K-A2Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="aWI-Tj-RxK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="592-6M-K8U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BRG-Bv-Jdo">
+                                <rect key="frame" x="0.0" y="62" width="375" height="557"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Edit" id="xgd-fY-dc6">
+                            <connections>
+                                <action selector="editMeme:" destination="FXt-As-tCQ" id="uzW-NE-9TE"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="nmI-ed-C4o"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="Edit" destination="xgd-fY-dc6" id="gSb-cT-dC2"/>
+                        <outlet property="imageView" destination="xgd-fY-dc6" id="MQQ-Ow-ObZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6OH-Av-iFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="873.91304347826099"/>
         </scene>
         <!--Item-->
         <scene sceneID="1ql-fE-8sm">
@@ -95,7 +134,7 @@
         <scene sceneID="xI3-5l-Yj8">
             <objects>
                 <collectionViewController id="H7N-Cy-KwS" userLabel="CollectionVC" customClass="CollectionVC" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="2xt-cV-h9l">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2xt-cV-h9l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,16 +159,18 @@
                             <outlet property="delegate" destination="H7N-Cy-KwS" id="eZf-08-acJ"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="65b-yt-oEf"/>
+                    <navigationItem key="navigationItem" id="J16-hM-6aj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5E6-q9-UVL"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxt-46-3DS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-154" y="179"/>
         </scene>
-        <!--View Controller-->
+        <!--Meme EditorVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MeMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MemeEditorVC" customModule="MeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -222,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="537" y="540"/>
+            <point key="canvasLocation" x="551" y="179"/>
         </scene>
     </scenes>
 </document>
