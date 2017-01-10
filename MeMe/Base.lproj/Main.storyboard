@@ -26,7 +26,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IF5-h7-vcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1665" y="541"/>
+            <point key="canvasLocation" x="-1413" y="575"/>
         </scene>
         <!--Item-->
         <scene sceneID="lwv-Gh-EYz">
@@ -43,7 +43,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7s5-zx-FZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-847" y="179"/>
+            <point key="canvasLocation" x="-856" y="179"/>
         </scene>
         <!--TableVC-->
         <scene sceneID="qtW-iq-jKy">
@@ -74,12 +74,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hI7-m1-41c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-154" y="874"/>
+            <point key="canvasLocation" x="-292" y="903"/>
         </scene>
         <!--Detail MemeVC-->
         <scene sceneID="eg1-ZC-tcE">
             <objects>
-                <viewController id="FXt-As-tCQ" customClass="DetailMemeVC" customModule="MeMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailMemeVC" id="FXt-As-tCQ" customClass="DetailMemeVC" customModule="MeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2o8-8K-A2Z"/>
                         <viewControllerLayoutGuide type="bottom" id="aWI-Tj-RxK"/>
@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OH-Av-iFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="549.60000000000002" y="873.91304347826099"/>
+            <point key="canvasLocation" x="159" y="903"/>
         </scene>
         <!--Item-->
         <scene sceneID="1ql-fE-8sm">
@@ -128,7 +128,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9z-hn-iSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-846" y="874"/>
+            <point key="canvasLocation" x="-857" y="903"/>
         </scene>
         <!--CollectionVC-->
         <scene sceneID="xI3-5l-Yj8">
@@ -177,7 +177,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxt-46-3DS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-154.40000000000001" y="178.56071964017991"/>
+            <point key="canvasLocation" x="-292" y="179"/>
         </scene>
         <!--Meme EditorVC-->
         <scene sceneID="tne-QT-ifu">
@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="551" y="179"/>
+            <point key="canvasLocation" x="159" y="179"/>
         </scene>
     </scenes>
 </document>
