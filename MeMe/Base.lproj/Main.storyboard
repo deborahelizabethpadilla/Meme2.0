@@ -158,6 +158,9 @@
                                         </imageView>
                                     </subviews>
                                 </view>
+                                <connections>
+                                    <outlet property="memeImg" destination="1DH-Kw-ldj" id="3Yi-Ct-FEq"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
