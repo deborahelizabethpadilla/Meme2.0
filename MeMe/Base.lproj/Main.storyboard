@@ -26,13 +26,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IF5-h7-vcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1413" y="575"/>
+            <point key="canvasLocation" x="-1652" y="517"/>
         </scene>
-        <!--Item-->
+        <!--Item 1-->
         <scene sceneID="lwv-Gh-EYz">
             <objects>
                 <navigationController id="DmM-Xh-0kz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vom-r4-FCh"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="vom-r4-FCh" userLabel="Item 1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VXv-m2-UWa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -69,17 +69,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="L5n-5i-4VM" userLabel="Navigation Item">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ie5-Kx-JVR"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ie5-Kx-JVR">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="szN-F0-Pqi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hI7-m1-41c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-292" y="903"/>
+            <point key="canvasLocation" x="-194" y="903"/>
         </scene>
         <!--Detail MemeVC-->
         <scene sceneID="eg1-ZC-tcE">
             <objects>
-                <viewController storyboardIdentifier="DetailMemeVC" id="FXt-As-tCQ" customClass="DetailMemeVC" customModule="MeMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailMemeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FXt-As-tCQ" customClass="DetailMemeVC" customModule="MeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2o8-8K-A2Z"/>
                         <viewControllerLayoutGuide type="bottom" id="aWI-Tj-RxK"/>
@@ -111,13 +115,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OH-Av-iFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159" y="903"/>
+            <point key="canvasLocation" x="590" y="903"/>
         </scene>
-        <!--Item-->
+        <!--Item 2-->
         <scene sceneID="1ql-fE-8sm">
             <objects>
                 <navigationController id="eYU-73-UFp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cJ0-cx-6L2"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="cJ0-cx-6L2" userLabel="Item 2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eyq-zi-kOV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -169,7 +173,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="J16-hM-6aj">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5E6-q9-UVL"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5E6-q9-UVL">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="eLU-FN-1AR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="flowLayout" destination="fel-Im-TfQ" id="1CP-1s-7DY"/>
@@ -177,7 +185,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxt-46-3DS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-292" y="179"/>
+            <point key="canvasLocation" x="-194" y="179"/>
         </scene>
         <!--Meme EditorVC-->
         <scene sceneID="tne-QT-ifu">
@@ -275,7 +283,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159" y="179"/>
+            <point key="canvasLocation" x="590" y="179"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="szN-F0-Pqi"/>
+    </inferredMetricsTieBreakers>
 </document>

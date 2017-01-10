@@ -67,6 +67,10 @@ class MemeEditorVC: UIViewController, UINavigationControllerDelegate, UIImagePic
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        if let memeFromDetail = memeSentFromDetail as Meme! {
+            imageView.image = memeFromDetail.image
+        }
+        
         self.subscribeToKeyboardNotifications()
         
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
