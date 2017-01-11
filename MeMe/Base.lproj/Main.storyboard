@@ -61,7 +61,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="tableViewCellImage" translatesAutoresizingMaskIntoConstraints="NO" id="oVy-bL-i6q" customClass="TableViewCellImage">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="TableViewCellImage" translatesAutoresizingMaskIntoConstraints="NO" id="oVy-bL-i6q" customClass="TableViewCellImage">
                                             <rect key="frame" x="124.5" y="0.0" width="126" height="112"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="126" id="EH3-HL-6Xi"/>
@@ -72,7 +72,7 @@
                                                 <constraint firstAttribute="height" constant="112" id="pig-4p-KEp"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHM-zY-jbU">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHM-zY-jbU" customClass="memeLabel">
                                             <rect key="frame" x="75" y="0.0" width="225" height="112"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="112" id="Bwz-b4-VoQ"/>
@@ -185,7 +185,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="90" height="91"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1DH-Kw-ldj" userLabel="memeImg">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1DH-Kw-ldj" userLabel="TableViewCellImage">
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="91"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -209,6 +209,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="collectionView" destination="2xt-cV-h9l" id="XuC-4g-Wm6"/>
                         <outlet property="flowLayout" destination="fel-Im-TfQ" id="1CP-1s-7DY"/>
                     </connections>
                 </collectionViewController>
@@ -316,6 +317,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="szN-F0-Pqi"/>
+        <segue reference="eLU-FN-1AR"/>
     </inferredMetricsTieBreakers>
 </document>
