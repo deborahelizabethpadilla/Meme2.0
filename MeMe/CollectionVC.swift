@@ -39,7 +39,7 @@ class CollectionVC: UICollectionViewController, UICollectionViewDelegateFlowLayo
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "memeCollectionViewCell", for: indexPath) as! MemeCollectionViewCell
         let meme = memes[indexPath.item]
-        cell.memeImg.image = meme.memedImage
+        cell.collectionImageView.image = meme.memedImage
         
         return cell
     }
