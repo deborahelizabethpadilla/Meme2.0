@@ -36,7 +36,7 @@ class TableVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableViewCell", for: indexPath) as! MemeTableViewCell
         let meme = memes[indexPath.row]
         cell.memeImg.image = meme.memedImage
-        cell.memeLabel.text = "\(meme.topTextField)...\(meme.bottomTextField)"
+        cell.memeLabel.text = "\(meme.topText)...\(meme.bottomText)"
         
         return cell
     }
