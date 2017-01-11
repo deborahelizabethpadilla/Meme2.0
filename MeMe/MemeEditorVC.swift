@@ -148,7 +148,7 @@ class MemeEditorVC: UIViewController, UINavigationControllerDelegate, UIImagePic
         let memedImage = generateMemedImage()
         let meme = Meme(top: topTextField.text!, bottom: bottomTextField.text!, image: imageView.image, memedImage:memedImage)
         //TODO: Add to memes array in AppDelegate
-        let object = UIApplication.shared.delegate
+        _ = UIApplication.shared.delegate
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.memes.append(meme)
         
