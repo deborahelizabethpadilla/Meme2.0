@@ -49,17 +49,46 @@
         <scene sceneID="qtW-iq-jKy">
             <objects>
                 <tableViewController id="YC6-oJ-c2h" customClass="TableVC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="irL-Zw-PeY">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="121" sectionHeaderHeight="28" sectionFooterHeight="28" id="irL-Zw-PeY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemeTableViewCell" id="ob3-6s-EYK" userLabel="MemeTableViewCell" customClass="MemeTableViewCell">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemeTableViewCell" rowHeight="121" id="ob3-6s-EYK" userLabel="MemeTableViewCell" customClass="MemeTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="121"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ob3-6s-EYK" id="BzQ-eQ-CVw">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="tableViewCellImage" translatesAutoresizingMaskIntoConstraints="NO" id="oVy-bL-i6q" customClass="TableViewCellImage">
+                                            <rect key="frame" x="124.5" y="0.0" width="126" height="112"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="126" id="EH3-HL-6Xi"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="126" id="IU1-g8-nkX"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="112" id="YGL-Zl-FDR"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="d2k-7G-WMN"/>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="112" id="eTu-HI-ZxC"/>
+                                                <constraint firstAttribute="height" constant="112" id="pig-4p-KEp"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHM-zY-jbU">
+                                            <rect key="frame" x="75" y="0.0" width="225" height="112"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="112" id="Bwz-b4-VoQ"/>
+                                                <constraint firstAttribute="width" constant="225" id="iV2-NM-g3i"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="oVy-bL-i6q" firstAttribute="top" secondItem="BzQ-eQ-CVw" secondAttribute="top" id="6fk-VG-DdU"/>
+                                        <constraint firstItem="oVy-bL-i6q" firstAttribute="centerX" secondItem="BzQ-eQ-CVw" secondAttribute="centerX" id="Jys-Dz-Fim"/>
+                                        <constraint firstItem="rHM-zY-jbU" firstAttribute="top" secondItem="BzQ-eQ-CVw" secondAttribute="top" id="QtM-e6-2yZ"/>
+                                        <constraint firstItem="rHM-zY-jbU" firstAttribute="centerX" secondItem="BzQ-eQ-CVw" secondAttribute="centerX" id="ayr-SV-ii0"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -78,7 +107,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hI7-m1-41c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194" y="903"/>
+            <point key="canvasLocation" x="-194.40000000000001" y="902.69865067466276"/>
         </scene>
         <!--Detail MemeVC-->
         <scene sceneID="eg1-ZC-tcE">
