@@ -162,12 +162,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BRG-Bv-Jdo" userLabel="imgView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BRG-Bv-Jdo" userLabel="imgView">
                                 <rect key="frame" x="0.0" y="62" width="375" height="557"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BRG-Bv-Jdo" firstAttribute="top" secondItem="2o8-8K-A2Z" secondAttribute="bottom" constant="42" id="00I-Pe-9Jj"/>
+                            <constraint firstItem="BRG-Bv-Jdo" firstAttribute="leading" secondItem="592-6M-K8U" secondAttribute="leading" id="fcH-6n-DgB"/>
+                            <constraint firstItem="aWI-Tj-RxK" firstAttribute="top" secondItem="BRG-Bv-Jdo" secondAttribute="bottom" constant="4" id="jYX-4e-17C"/>
+                            <constraint firstAttribute="trailing" secondItem="BRG-Bv-Jdo" secondAttribute="trailing" id="m9z-CL-9UH"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Edit" id="xgd-fY-dc6">
@@ -179,7 +184,6 @@
                     <navigationItem key="navigationItem" id="nmI-ed-C4o"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="editOutlet" destination="xgd-fY-dc6" id="Xqt-l9-fwb"/>
                         <outlet property="imgView" destination="BRG-Bv-Jdo" id="VDb-uo-XTh"/>
                     </connections>
                 </viewController>

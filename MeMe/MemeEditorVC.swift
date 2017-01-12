@@ -164,6 +164,7 @@ class MemeEditorVC: UIViewController, UINavigationControllerDelegate, UIImagePic
         
         present(activityController, animated: true, completion: nil)
         
+
     }
     @IBAction func cancelButtonAction(_ sender: Any) {
         //self.dismissViewControllerAnimated(true, completion: nil)

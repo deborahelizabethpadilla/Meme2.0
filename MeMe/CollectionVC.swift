@@ -13,6 +13,14 @@ class CollectionVC: UICollectionViewController, UICollectionViewDelegateFlowLayo
     var memes: [Meme]!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        memes = appDelegate.memes
+        collectionView?.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
