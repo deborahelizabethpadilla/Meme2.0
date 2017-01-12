@@ -11,32 +11,28 @@ import UIKit
 
 class TableVC: UITableViewController {
     
-    var memes: [Meme]!
+    var memes: [Meme] {
+        return (UIApplication.shared.delegate as! AppDelegate).memes
+    }
 
     override func viewWillAppear(_ animated: Bool) {
-        let applicationDelegate = (UIApplication.shared.delegate as! AppDelegate)
-        memes = applicationDelegate.memes
+        super.viewWillAppear(animated)
         
-        self.tableView.reloadData()
-        
+        tableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return memes.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableViewCell", for: indexPath) as! MemeTableViewCell
         let meme = memes[indexPath.row]
         cell.memeImg.image = meme.memedImage
-        
         return cell
     }
     
