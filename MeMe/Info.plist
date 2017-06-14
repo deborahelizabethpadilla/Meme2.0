@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>MeMe2</string>
+	<string>Making A Meme</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -23,9 +23,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>MeMe Would Like To Access Your Camera</string>
+	<string>Making A Meme Would Like To Access Your Camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>MeMe Would Like To Access Your Photo Library</string>
+	<string>Making A Meme Would Like To Access Your Photo Library</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
